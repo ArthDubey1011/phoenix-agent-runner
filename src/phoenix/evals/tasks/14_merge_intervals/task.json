@@ -1,0 +1,10 @@
+{
+  "id": "14",
+  "name": "merge_intervals",
+  "difficulty": "hard",
+  "prompt": "Create solution.py defining merge_intervals(intervals) that merges overlapping intervals given as [start, end] lists, in any order, and returns them sorted by start. Intervals that merely touch (one ends where the next begins) are merged too. Do not mutate the input. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "wrong"
+  }
+}

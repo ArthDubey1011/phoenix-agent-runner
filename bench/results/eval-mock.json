@@ -1,0 +1,228 @@
+{
+  "summary": {
+    "mode": "mock",
+    "model": "mock (scripted; validates the pipeline, not a model)",
+    "tasks": 15,
+    "passed": 13,
+    "pass_rate": 0.8667,
+    "avg_attempts": 1.867,
+    "total_tokens": 12900,
+    "total_cost_usd": "0.030100",
+    "latency_s": {
+      "mean": 4.24,
+      "p50": 3.66,
+      "max": 7.82
+    },
+    "by_difficulty": {
+      "easy": {
+        "tasks": 5,
+        "passed": 5
+      },
+      "medium": {
+        "tasks": 5,
+        "passed": 5
+      },
+      "hard": {
+        "tasks": 5,
+        "passed": 3
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "01",
+      "name": "fizzbuzz",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 4,
+      "attempts": 1,
+      "tokens": 600,
+      "cost_usd": "0.001400",
+      "latency_s": 1.652428,
+      "note": ""
+    },
+    {
+      "id": "02",
+      "name": "palindrome",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 4,
+      "attempts": 1,
+      "tokens": 600,
+      "cost_usd": "0.001400",
+      "latency_s": 1.679608,
+      "note": ""
+    },
+    {
+      "id": "03",
+      "name": "sum_evens",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 4,
+      "attempts": 1,
+      "tokens": 600,
+      "cost_usd": "0.001400",
+      "latency_s": 1.695356,
+      "note": ""
+    },
+    {
+      "id": "04",
+      "name": "reverse_words",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 4,
+      "attempts": 1,
+      "tokens": 600,
+      "cost_usd": "0.001400",
+      "latency_s": 2.405107,
+      "note": ""
+    },
+    {
+      "id": "05",
+      "name": "word_count",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 4,
+      "attempts": 1,
+      "tokens": 600,
+      "cost_usd": "0.001400",
+      "latency_s": 2.527229,
+      "note": ""
+    },
+    {
+      "id": "06",
+      "name": "two_sum",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 2.977477,
+      "note": ""
+    },
+    {
+      "id": "07",
+      "name": "roman",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 3.639809,
+      "note": ""
+    },
+    {
+      "id": "08",
+      "name": "balanced",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 3.664067,
+      "note": ""
+    },
+    {
+      "id": "09",
+      "name": "flatten",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 5.276188,
+      "note": ""
+    },
+    {
+      "id": "10",
+      "name": "anagram_groups",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 4.758578,
+      "note": ""
+    },
+    {
+      "id": "11",
+      "name": "lru_cache",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 8,
+      "attempts": 3,
+      "tokens": 1200,
+      "cost_usd": "0.002800",
+      "latency_s": 5.478325,
+      "note": ""
+    },
+    {
+      "id": "12",
+      "name": "evaluate_expression",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": false,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 6.246403,
+      "note": "hidden test failed: AssertionError"
+    },
+    {
+      "id": "13",
+      "name": "min_coins",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 8,
+      "attempts": 3,
+      "tokens": 1200,
+      "cost_usd": "0.002800",
+      "latency_s": 7.069679,
+      "note": ""
+    },
+    {
+      "id": "14",
+      "name": "merge_intervals",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": false,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 6.697807,
+      "note": "hidden test failed: AssertionError"
+    },
+    {
+      "id": "15",
+      "name": "top_k_frequent",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 8,
+      "attempts": 3,
+      "tokens": 1200,
+      "cost_usd": "0.002800",
+      "latency_s": 7.820566,
+      "note": ""
+    }
+  ]
+}

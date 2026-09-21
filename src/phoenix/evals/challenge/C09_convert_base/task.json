@@ -1,0 +1,10 @@
+{
+  "id": "C09",
+  "name": "convert_base",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining convert(s, from_base, to_base) that converts the integer written in s from one base to another and returns the result as a string. Bases are 2..36 (raise ValueError otherwise). Digits are 0-9 then a-z (input letters may be upper or lower case; output is always lower case). An optional single leading '-' means negative. The output has no leading zeros, zero is '0' (never '-0'), and there is no '+' sign. Be strict about input: raise ValueError for an empty string, a lone '-', any character that is not a valid digit in from_base, a '+' sign, spaces, underscores, or a decimal point. The result must be exact for very large numbers. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

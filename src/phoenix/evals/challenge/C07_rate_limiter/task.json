@@ -1,0 +1,10 @@
+{
+  "id": "C07",
+  "name": "rate_limiter",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining class SlidingWindowLimiter(limit, window) with allow(key, t) -> bool. It implements a sliding-window rate limit per key: a request at time t is allowed if fewer than limit ALLOWED requests for that key occurred in the half-open interval (t - window, t] (so a request exactly window seconds ago no longer counts). Allowed requests are recorded; denied requests are NOT recorded and do not count. Keys are independent. Calls arrive with non-decreasing t. Times may be floats. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

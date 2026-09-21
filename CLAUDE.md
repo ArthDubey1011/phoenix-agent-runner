@@ -1,0 +1,11 @@
+# Rules for Phoenix
+- Read SPEC.md. Work one phase at a time. After each phase: run tests, summarize in <=10 lines, list deviations from SPEC.md.
+- Tests never call a real LLM. Use MockProvider. Real calls only when PHOENIX_REAL_LLM=1.
+- All state changes go through the event store. No in-memory-only state that a crash would lose.
+- A step commit is ONE transaction: append event + complete task + update spend.
+- Write the failing test first for anything concurrent. Use seeded randomness so failures reproduce.
+- Sandbox defaults are the most restrictive; loosening needs a comment explaining why.
+- Secrets come from env; provide .env.example. Never commit keys.
+- Typed Python, ruff clean. No TODOs left at the end of a phase.
+- Never invent benchmark numbers. Numbers in docs come from scripts in /bench.
+- Keep responses short; do not re-print unchanged files.

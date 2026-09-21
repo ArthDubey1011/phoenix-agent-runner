@@ -1,0 +1,10 @@
+[
+  [
+    "key=lambda x: (self.freq[x], self.last[x])",
+    "key=lambda x: self.freq[x]"
+  ],
+  [
+    "self.freq.get(k, 0) + 1",
+    "self.freq.get(k, 0)"
+  ]
+]

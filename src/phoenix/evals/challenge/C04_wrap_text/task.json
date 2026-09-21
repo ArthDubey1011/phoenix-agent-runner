@@ -1,0 +1,10 @@
+{
+  "id": "C04",
+  "name": "wrap_text",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining wrap_text(text, width) that greedily word-wraps text and returns a list of lines. Words are the whitespace-separated pieces of text (any run of whitespace is one separator; leading/trailing whitespace is ignored). Put as many words as fit on a line, separated by single spaces, with every line at most width characters and no trailing spaces. A word longer than width is broken: first finish the current line (flush it), then the word is cut into pieces of width characters; every full piece is its own line, and the final shorter piece becomes the current line, which following words may join if they fit. Empty or all-whitespace text gives []. width is at least 1. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

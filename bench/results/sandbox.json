@@ -1,0 +1,20 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "os": "Windows-11-10.0.26200-SP0"
+  },
+  "config": {
+    "trials": 20,
+    "image": "python:3.12-slim",
+    "command": "python main.py"
+  },
+  "wall_ms": {
+    "median": 396,
+    "p95": 559,
+    "max": 559
+  },
+  "container_start_to_exit_ms": {
+    "median": 238,
+    "p95": 307
+  }
+}

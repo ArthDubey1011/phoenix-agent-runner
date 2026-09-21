@@ -1,0 +1,10 @@
+{
+  "id": "11",
+  "name": "lru_cache",
+  "difficulty": "hard",
+  "prompt": "Create solution.py defining class LRUCache(capacity) with get(key) -> value or -1, and put(key, value). Both operations mark the key as most recently used. When putting a new key into a full cache, evict the least recently used key. Updating an existing key never evicts anything. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 2,
+    "outcome": "pass"
+  }
+}

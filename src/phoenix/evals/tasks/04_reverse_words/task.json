@@ -1,0 +1,10 @@
+{
+  "id": "04",
+  "name": "reverse_words",
+  "difficulty": "easy",
+  "prompt": "Create solution.py defining reverse_words(s) that returns the words of s in reverse order joined by single spaces. Leading, trailing and repeated spaces in the input are ignored. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 0,
+    "outcome": "pass"
+  }
+}

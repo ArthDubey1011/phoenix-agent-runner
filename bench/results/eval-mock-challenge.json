@@ -1,0 +1,156 @@
+{
+  "summary": {
+    "mode": "mock",
+    "model": "mock (scripted; validates the pipeline, not a model)",
+    "tasks": 10,
+    "unfinished": 0,
+    "passed": 10,
+    "pass_rate": 1.0,
+    "avg_attempts": 2.0,
+    "total_tokens": 9000,
+    "total_cost_usd": "0.021000",
+    "latency_s": {
+      "mean": 9.76,
+      "p50": 9.94,
+      "max": 11.94
+    },
+    "by_difficulty": {
+      "challenge": {
+        "tasks": 10,
+        "passed": 10
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "C01",
+      "name": "rle_chunked",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 7.108783,
+      "note": ""
+    },
+    {
+      "id": "C02",
+      "name": "semver_sort",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 10.079539,
+      "note": ""
+    },
+    {
+      "id": "C03",
+      "name": "nth_weekday",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 7.371534,
+      "note": ""
+    },
+    {
+      "id": "C04",
+      "name": "wrap_text",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 9.450559,
+      "note": ""
+    },
+    {
+      "id": "C05",
+      "name": "ledger",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 8.483698,
+      "note": ""
+    },
+    {
+      "id": "C06",
+      "name": "build_order",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 9.801401,
+      "note": ""
+    },
+    {
+      "id": "C07",
+      "name": "rate_limiter",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 10.77401,
+      "note": ""
+    },
+    {
+      "id": "C08",
+      "name": "get_path",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 11.097147,
+      "note": ""
+    },
+    {
+      "id": "C09",
+      "name": "convert_base",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 11.4711,
+      "note": ""
+    },
+    {
+      "id": "C10",
+      "name": "lfu_cache",
+      "difficulty": "challenge",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 6,
+      "attempts": 2,
+      "tokens": 900,
+      "cost_usd": "0.002100",
+      "latency_s": 11.941557,
+      "note": ""
+    }
+  ]
+}

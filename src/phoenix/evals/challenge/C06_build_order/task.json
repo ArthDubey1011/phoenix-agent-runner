@@ -1,0 +1,10 @@
+{
+  "id": "C06",
+  "name": "build_order",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining build_order(deps) where deps maps a task name to a list of task names it depends on (prerequisites). Tasks that only appear as a prerequisite (not as a key) are still tasks. Return a list of all tasks such that every task comes after all of its prerequisites. Whenever several tasks are ready, ALWAYS choose the alphabetically smallest, so the result is unique. Raise ValueError if the dependencies contain a cycle (including a task depending on itself). Duplicate prerequisites are harmless. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

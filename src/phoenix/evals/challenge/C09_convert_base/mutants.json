@@ -1,0 +1,10 @@
+[
+  [
+    "if d < 0 or d >= from_base:",
+    "if d < 0 or d > from_base:"
+  ],
+  [
+    "    if value == 0:\n        return \"0\"\n",
+    "    if False:\n        return \"0\"\n"
+  ]
+]

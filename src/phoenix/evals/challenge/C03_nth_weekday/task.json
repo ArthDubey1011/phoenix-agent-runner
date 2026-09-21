@@ -1,0 +1,10 @@
+{
+  "id": "C03",
+  "name": "nth_weekday",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining nth_weekday(year, month, n, weekday) that returns the date of the n-th given weekday of a month as an ISO string 'YYYY-MM-DD'. weekday is 0=Monday .. 6=Sunday. n = 1 is the first such weekday, 2 the second, ...; n = -1 is the LAST, -2 the second to last, ... . Raise ValueError if n is 0 or that occurrence does not exist (for example a 5th Tuesday in a month with only four). Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "10",
+  "name": "anagram_groups",
+  "difficulty": "medium",
+  "prompt": "Create solution.py defining group_anagrams(words) that groups words that are anagrams of each other. Return a list of groups; sort the words inside each group alphabetically and sort the groups themselves (lexicographically). Matching is case-sensitive. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

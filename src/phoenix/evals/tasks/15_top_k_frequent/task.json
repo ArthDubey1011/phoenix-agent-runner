@@ -1,0 +1,10 @@
+{
+  "id": "15",
+  "name": "top_k_frequent",
+  "difficulty": "hard",
+  "prompt": "Create solution.py defining top_k_frequent(words, k) that returns the k most frequent words ordered by frequency (highest first), breaking ties alphabetically. If there are fewer than k distinct words, return them all. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 2,
+    "outcome": "pass"
+  }
+}

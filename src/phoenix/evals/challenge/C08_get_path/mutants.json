@@ -1,0 +1,10 @@
+[
+  [
+    "-len(cur) <= t < len(cur)",
+    "0 <= t < len(cur)"
+  ],
+  [
+    "path[i + 1] == \".\"",
+    "False"
+  ]
+]

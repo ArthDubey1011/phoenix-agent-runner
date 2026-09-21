@@ -1,0 +1,10 @@
+{
+  "id": "02",
+  "name": "palindrome",
+  "difficulty": "easy",
+  "prompt": "Create solution.py defining is_palindrome(s) that is True when s reads the same forwards and backwards, ignoring case and any non-alphanumeric characters. The empty string is a palindrome. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 0,
+    "outcome": "pass"
+  }
+}

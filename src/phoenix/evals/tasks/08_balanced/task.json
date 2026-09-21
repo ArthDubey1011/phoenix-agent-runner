@@ -1,0 +1,10 @@
+{
+  "id": "08",
+  "name": "balanced",
+  "difficulty": "medium",
+  "prompt": "Create solution.py defining is_balanced(s) that is True when the brackets ()[]{} in s are correctly nested and closed. Characters that are not brackets are ignored. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

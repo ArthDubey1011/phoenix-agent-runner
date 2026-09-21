@@ -1,0 +1,10 @@
+{
+  "id": "06",
+  "name": "two_sum",
+  "difficulty": "medium",
+  "prompt": "Create solution.py defining two_sum(nums, target) that returns a tuple (i, j) with i < j and nums[i] + nums[j] == target, choosing the smallest i and then the smallest j. Return None when there is no such pair. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

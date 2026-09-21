@@ -1,0 +1,10 @@
+[
+  [
+    "elif len(cur) + 1 + len(w) <= width:",
+    "elif len(cur) + 1 + len(w) < width:"
+  ],
+  [
+    "                w = w[width:]\n            cur = w",
+    "                w = w[width:]\n            cur = \"\""
+  ]
+]

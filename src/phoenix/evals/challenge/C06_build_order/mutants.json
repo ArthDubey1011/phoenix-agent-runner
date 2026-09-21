@@ -1,0 +1,10 @@
+[
+  [
+    "t = heapq.heappop(ready)",
+    "t = ready.pop()"
+  ],
+  [
+    "if len(order) != len(tasks):",
+    "if False:"
+  ]
+]

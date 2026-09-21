@@ -1,0 +1,10 @@
+{
+  "id": "01",
+  "name": "fizzbuzz",
+  "difficulty": "easy",
+  "prompt": "Create solution.py defining fizzbuzz(n) that returns a list of strings for 1..n: multiples of 3 -> 'Fizz', of 5 -> 'Buzz', of both -> 'FizzBuzz', otherwise the number as a string. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 0,
+    "outcome": "pass"
+  }
+}

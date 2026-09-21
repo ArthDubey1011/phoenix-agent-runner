@@ -1,0 +1,10 @@
+{
+  "id": "C10",
+  "name": "lfu_cache",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining class LFUCache(capacity) with get(key) -> value or -1, and put(key, value). Every get of an existing key and every put counts as one use of that key; a brand-new key starts with 1 use (its put). When putting a NEW key into a full cache, first evict the key with the FEWEST uses; if several tie, evict the least recently used among them. Putting an existing key updates its value, counts as a use, and never evicts. A capacity of 0 (or less) stores nothing: put does nothing and get returns -1. A missing-key get changes nothing. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

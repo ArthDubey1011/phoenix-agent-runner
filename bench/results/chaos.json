@@ -1,0 +1,139 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "os": "Windows-11-10.0.26200-SP0"
+  },
+  "config": {
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "runs_per_seed": 30,
+    "workload": "mixed",
+    "workers": 3
+  },
+  "seeds_passed": 5,
+  "total_runs": 150,
+  "faults_hit": 62,
+  "kill_9": 24,
+  "suspend": 22,
+  "docker_kill": 16,
+  "takeovers": 29,
+  "provider_calls": 721,
+  "duplicate_llm_calls": 0,
+  "per_seed": [
+    {
+      "seed": 1,
+      "passed": true,
+      "duration_s": 27.7,
+      "statuses": {
+        "succeeded": 30
+      },
+      "faults_scheduled": 15,
+      "faults_hit": 10,
+      "kill_9": 3,
+      "suspend": 2,
+      "docker_kill": 5,
+      "takeovers": 4,
+      "provider_calls": 147,
+      "duplicate_llm_calls": 0,
+      "invariants": {
+        "termination": true,
+        "log integrity": true,
+        "no double billing": true,
+        "spend consistency": true
+      }
+    },
+    {
+      "seed": 2,
+      "passed": true,
+      "duration_s": 30.2,
+      "statuses": {
+        "succeeded": 30
+      },
+      "faults_scheduled": 15,
+      "faults_hit": 13,
+      "kill_9": 5,
+      "suspend": 6,
+      "docker_kill": 2,
+      "takeovers": 8,
+      "provider_calls": 147,
+      "duplicate_llm_calls": 0,
+      "invariants": {
+        "termination": true,
+        "log integrity": true,
+        "no double billing": true,
+        "spend consistency": true
+      }
+    },
+    {
+      "seed": 3,
+      "passed": true,
+      "duration_s": 31.2,
+      "statuses": {
+        "succeeded": 30
+      },
+      "faults_scheduled": 15,
+      "faults_hit": 14,
+      "kill_9": 6,
+      "suspend": 5,
+      "docker_kill": 3,
+      "takeovers": 8,
+      "provider_calls": 140,
+      "duplicate_llm_calls": 0,
+      "invariants": {
+        "termination": true,
+        "log integrity": true,
+        "no double billing": true,
+        "spend consistency": true
+      }
+    },
+    {
+      "seed": 4,
+      "passed": true,
+      "duration_s": 30.6,
+      "statuses": {
+        "succeeded": 30
+      },
+      "faults_scheduled": 15,
+      "faults_hit": 12,
+      "kill_9": 6,
+      "suspend": 2,
+      "docker_kill": 4,
+      "takeovers": 5,
+      "provider_calls": 161,
+      "duplicate_llm_calls": 0,
+      "invariants": {
+        "termination": true,
+        "log integrity": true,
+        "no double billing": true,
+        "spend consistency": true
+      }
+    },
+    {
+      "seed": 5,
+      "passed": true,
+      "duration_s": 31.2,
+      "statuses": {
+        "succeeded": 30
+      },
+      "faults_scheduled": 15,
+      "faults_hit": 13,
+      "kill_9": 4,
+      "suspend": 7,
+      "docker_kill": 2,
+      "takeovers": 4,
+      "provider_calls": 126,
+      "duplicate_llm_calls": 0,
+      "invariants": {
+        "termination": true,
+        "log integrity": true,
+        "no double billing": true,
+        "spend consistency": true
+      }
+    }
+  ]
+}

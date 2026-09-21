@@ -1,0 +1,10 @@
+{
+  "id": "05",
+  "name": "word_count",
+  "difficulty": "easy",
+  "prompt": "Create solution.py defining word_count(text) that returns a dict mapping each lowercase word to how many times it occurs. A word is a maximal run of ASCII letters; everything else is a separator. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 0,
+    "outcome": "pass"
+  }
+}

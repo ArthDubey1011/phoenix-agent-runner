@@ -1,0 +1,10 @@
+{
+  "id": "C02",
+  "name": "semver_sort",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining sort_versions(versions) that returns the list of version strings sorted ascending by Semantic Versioning 2.0 precedence. Versions look like 'MAJOR.MINOR.PATCH', optionally followed by '-PRERELEASE' and/or '+BUILD'. Rules: compare MAJOR, MINOR, PATCH numerically; a version with a pre-release is LOWER than the same version without one; pre-releases are dot-separated identifiers compared left to right, numeric identifiers numerically, other identifiers lexically in ASCII order, a numeric identifier is lower than a non-numeric one, and if all shared identifiers are equal the one with fewer identifiers is lower. Build metadata (after '+') is ignored for ordering. Versions with equal precedence keep their original relative order. Return the original strings, unmodified. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

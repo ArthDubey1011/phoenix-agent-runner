@@ -1,0 +1,31 @@
+[project]
+name = "phoenix"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["asyncpg", "docker", "psutil", "fastapi", "uvicorn"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "hypothesis", "ruff", "psutil", "httpx"]
+real-llm = ["anthropic", "httpx"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+markers = ["slow: end-to-end chaos runs that depend on process timing; skipped in CI"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "bench"]
+# eval task data (reference/wrong solutions, hidden tests) is agent-style code, not project code
+extend-exclude = ["src/phoenix/evals/tasks", "src/phoenix/evals/challenge"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ANN"]

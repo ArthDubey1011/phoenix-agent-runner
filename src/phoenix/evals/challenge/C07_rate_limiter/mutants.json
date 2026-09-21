@@ -1,0 +1,10 @@
+[
+  [
+    "while q and q[0] <= t - self.window:",
+    "while q and q[0] < t - self.window:"
+  ],
+  [
+    "            return True\n        return False",
+    "            return True\n        q.append(t)\n        return False"
+  ]
+]

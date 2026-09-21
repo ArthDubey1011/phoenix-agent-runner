@@ -1,0 +1,10 @@
+{
+  "id": "09",
+  "name": "flatten",
+  "difficulty": "medium",
+  "prompt": "Create solution.py defining flatten(nested) that flattens arbitrarily nested lists into a single flat list, preserving order. Only lists are flattened; strings are kept whole. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

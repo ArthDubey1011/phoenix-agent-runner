@@ -1,0 +1,10 @@
+[
+  [
+    "if self.balances[src] < amount:",
+    "if self.balances[src] <= amount:"
+  ],
+  [
+    "        self.applied.add(txid)\n        return True",
+    "        return True"
+  ]
+]

@@ -1,0 +1,10 @@
+[
+  [
+    "days[n - 1] if n > 0 else days[n]",
+    "days[n]"
+  ],
+  [
+    "abs(n) > len(days)",
+    "abs(n) >= len(days)"
+  ]
+]

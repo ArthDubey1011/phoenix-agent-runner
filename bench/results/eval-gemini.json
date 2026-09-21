@@ -1,0 +1,229 @@
+{
+  "summary": {
+    "mode": "real",
+    "model": "gemini: gemini-3.1-flash-lite",
+    "tasks": 15,
+    "unfinished": 0,
+    "passed": 15,
+    "pass_rate": 1.0,
+    "avg_attempts": 1.133,
+    "total_tokens": 32719,
+    "total_cost_usd": "0.000000",
+    "latency_s": {
+      "mean": 272.72,
+      "p50": 272.43,
+      "max": 495.4
+    },
+    "by_difficulty": {
+      "easy": {
+        "tasks": 5,
+        "passed": 5
+      },
+      "medium": {
+        "tasks": 5,
+        "passed": 5
+      },
+      "hard": {
+        "tasks": 5,
+        "passed": 5
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "01",
+      "name": "fizzbuzz",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1500,
+      "cost_usd": "0.000000",
+      "latency_s": 30.291344,
+      "note": ""
+    },
+    {
+      "id": "02",
+      "name": "palindrome",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1502,
+      "cost_usd": "0.000000",
+      "latency_s": 58.306602,
+      "note": ""
+    },
+    {
+      "id": "03",
+      "name": "sum_evens",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 4,
+      "attempts": 1,
+      "tokens": 1836,
+      "cost_usd": "0.000000",
+      "latency_s": 100.370337,
+      "note": ""
+    },
+    {
+      "id": "04",
+      "name": "reverse_words",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1657,
+      "cost_usd": "0.000000",
+      "latency_s": 129.240391,
+      "note": ""
+    },
+    {
+      "id": "05",
+      "name": "word_count",
+      "difficulty": "easy",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 5,
+      "attempts": 2,
+      "tokens": 3037,
+      "cost_usd": "0.000000",
+      "latency_s": 186.129112,
+      "note": ""
+    },
+    {
+      "id": "06",
+      "name": "two_sum",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1719,
+      "cost_usd": "0.000000",
+      "latency_s": 216.135333,
+      "note": ""
+    },
+    {
+      "id": "07",
+      "name": "roman",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 2413,
+      "cost_usd": "0.000000",
+      "latency_s": 244.707648,
+      "note": ""
+    },
+    {
+      "id": "08",
+      "name": "balanced",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1656,
+      "cost_usd": "0.000000",
+      "latency_s": 272.425945,
+      "note": ""
+    },
+    {
+      "id": "09",
+      "name": "flatten",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1532,
+      "cost_usd": "0.000000",
+      "latency_s": 300.26982,
+      "note": ""
+    },
+    {
+      "id": "10",
+      "name": "anagram_groups",
+      "difficulty": "medium",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 5,
+      "attempts": 2,
+      "tokens": 3968,
+      "cost_usd": "0.000000",
+      "latency_s": 355.628929,
+      "note": ""
+    },
+    {
+      "id": "11",
+      "name": "lru_cache",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 2477,
+      "cost_usd": "0.000000",
+      "latency_s": 384.224105,
+      "note": ""
+    },
+    {
+      "id": "12",
+      "name": "evaluate_expression",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 2888,
+      "cost_usd": "0.000000",
+      "latency_s": 411.539498,
+      "note": ""
+    },
+    {
+      "id": "13",
+      "name": "min_coins",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1971,
+      "cost_usd": "0.000000",
+      "latency_s": 439.172724,
+      "note": ""
+    },
+    {
+      "id": "14",
+      "name": "merge_intervals",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 2660,
+      "cost_usd": "0.000000",
+      "latency_s": 467.035193,
+      "note": ""
+    },
+    {
+      "id": "15",
+      "name": "top_k_frequent",
+      "difficulty": "hard",
+      "run_status": "succeeded",
+      "passed": true,
+      "steps": 3,
+      "attempts": 1,
+      "tokens": 1903,
+      "cost_usd": "0.000000",
+      "latency_s": 495.39519,
+      "note": ""
+    }
+  ]
+}

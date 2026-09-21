@@ -1,0 +1,10 @@
+{
+  "id": "12",
+  "name": "evaluate_expression",
+  "difficulty": "hard",
+  "prompt": "Create solution.py defining evaluate(expr) that evaluates an arithmetic expression string with + - * /, parentheses, unary minus, decimals and spaces. Use normal precedence (* and / before + and -) and left associativity. Return a float. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "wrong"
+  }
+}

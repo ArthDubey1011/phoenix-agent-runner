@@ -1,0 +1,10 @@
+{
+  "id": "03",
+  "name": "sum_evens",
+  "difficulty": "easy",
+  "prompt": "Create solution.py defining sum_evens(nums) that returns the sum of the even integers in the list nums (0 for an empty list). Negative numbers count. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 0,
+    "outcome": "pass"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "C08",
+  "name": "get_path",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining get_path(obj, path, default=None) that reads a value out of nested dicts and lists using a path string. Path syntax: keys are separated by '.'; a list index is written in square brackets, e.g. 'a.b[2].c' or '[0][1]' (indices may be negative, counting from the end). A literal dot inside a key is written '\\.' (so the path 'a\\.b' means the single key 'a.b'). An empty path returns obj itself. If any step is missing (unknown key, index out of range, or the wrong kind of container, such as indexing a dict with [0] or looking up a key in a list) return default. A value that is present is returned even if it is falsy or None. Empty keys are not supported. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

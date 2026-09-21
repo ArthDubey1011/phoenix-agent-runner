@@ -1,0 +1,10 @@
+{
+  "id": "C05",
+  "name": "ledger",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining class Ledger with: open(account, balance=0) creates an account (ValueError if it already exists); transfer(txid, src, dst, amount); balance(account); history(account). transfer rules, checked in this order: (1) if txid was already APPLIED return False immediately with no other checks and no effect; (2) raise ValueError if amount <= 0, src == dst, or either account does not exist; (3) raise ValueError if src's balance is less than amount (a balance may drop to exactly 0 but never below); otherwise move the money, record it, and return True. A transfer that raises changes nothing and is NOT recorded, so the same txid may be retried later. history(account) returns a list of (txid, delta) tuples in the order applied: delta is -amount for the source and +amount for the destination. history returns a copy. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

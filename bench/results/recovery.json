@@ -1,0 +1,29 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "os": "Windows-11-10.0.26200-SP0"
+  },
+  "config": {
+    "lease_seconds": 2.0,
+    "steps": 20,
+    "trials": 8,
+    "workers": 2
+  },
+  "all_clean": true,
+  "recovery_gap_s": {
+    "min": 2.27,
+    "median": 2.3,
+    "p95": 2.4,
+    "max": 2.4
+  },
+  "trials_detail": [
+    2.27,
+    2.3,
+    2.3,
+    2.3,
+    2.3,
+    2.33,
+    2.38,
+    2.4
+  ]
+}

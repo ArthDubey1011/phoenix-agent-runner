@@ -1,0 +1,10 @@
+{
+  "id": "07",
+  "name": "roman",
+  "difficulty": "medium",
+  "prompt": "Create solution.py defining to_roman(n) that converts an integer 1..3999 to a Roman numeral using standard subtractive notation (IV, IX, XL, XC, CD, CM). Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}

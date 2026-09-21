@@ -1,0 +1,10 @@
+{
+  "id": "C01",
+  "name": "rle_chunked",
+  "difficulty": "challenge",
+  "prompt": "Create solution.py defining encode(s) and decode(t). encode run-length encodes a string of letters (no digits in the input): each run is the letter followed by its count, except a run of length 1 which is just the letter. Counts are a single digit, so a run longer than 9 is split into chunks of 9 followed by the remainder: 12 x 'a' -> 'a9a3', 10 x 'a' -> 'a9a', 9 x 'a' -> 'a9'. decode is the exact inverse (a letter followed by a digit d means d repeats, a letter with no digit means 1). encode('') == '' and decode('') == ''. Verify it by running code, then call finish.",
+  "mock": {
+    "fail_first": 1,
+    "outcome": "pass"
+  }
+}
