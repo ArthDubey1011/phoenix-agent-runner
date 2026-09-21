@@ -20,8 +20,11 @@ work with leases; agent-written code runs in a locked-down Docker container.
   slow chaos tests and the fencing-removal proof, with real Linux signals. A mixed `chaos --seed 1
   --runs 30` run with real `docker kill` faults also passed all 4 invariants there. That run
   confirmed the workspace permission fix is required: without the `chmod`, the sandbox's uid
-  65534 gets `PermissionError` on a workspace owned by another uid. **Not verified:** Postgres 16
-  specifically, and the GitHub Action itself, which has never run.
+  65534 gets `PermissionError` on a workspace owned by another uid. The GitHub Action (Ubuntu,
+  Python 3.12, Postgres 16, real Docker) has now run: its first run caught a genuine flake, where
+  Docker can report `OOMKilled=false` right after the kernel OOM-killed a container (the exit
+  event beats the OOM event), which the sandbox runner now re-checks for; the next run passed
+  180 tests (the 2 timing-dependent chaos tests are skipped in CI).
 - The HTTP API is deliberately minimal (submit, status, events, timeline). It has an optional
   shared API key and no users, roles or rate limiting: keep it on localhost or behind real auth.
 
@@ -200,7 +203,7 @@ What to take from it, and what not to:
 - Same caveats as before: my own small test sets, one model, and latency dominated by request
   pacing rather than by the system.
 
-**Tests:** 176 tests (unit, integration, security, chaos). 174 run in CI; 2 timing-dependent
+**Tests:** 182 tests (unit, integration, security, chaos). 180 run in CI; 2 timing-dependent
 end-to-end chaos tests are marked `slow`.
 
 ### Fencing is proven, not assumed
