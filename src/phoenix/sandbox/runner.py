@@ -22,6 +22,8 @@ from requests.exceptions import ReadTimeout
 from phoenix.sandbox.policy import SandboxPolicy
 
 LABEL = "phoenix.sandbox"
+OOM_RECHECKS = 10  # x 0.1 s: a bounded wait, paid only by exit-137 containers
+OOM_RECHECK_INTERVAL_S = 0.1
 
 
 @dataclass(frozen=True)
@@ -108,13 +110,29 @@ class DockerRunner:
                 duration_ms = int((time.monotonic() - started) * 1000)
                 out, out_cut = out_f.result()
                 err, err_cut = err_f.result()
-            container.reload()
-            oom = bool(container.attrs["State"].get("OOMKilled"))
+            oom = self._oom_killed(container, exit_code, timed_out)
             return SandboxResult(
                 exit_code, out, err, timed_out, oom, duration_ms, out_cut or err_cut
             )
         finally:
             self._remove(container)
+
+    @staticmethod
+    def _oom_killed(container: Container, exit_code: int, timed_out: bool) -> bool:
+        """Docker's OOMKilled flag. On Linux the container-exit event can be processed before
+        the OOM event that sets the flag, so a single read right after exit can say False for a
+        container the kernel just OOM-killed (seen on GitHub's runners). For a SIGKILL exit (137)
+        that we did not cause with a timeout, re-read briefly until the flag shows up."""
+        container.reload()
+        oom = bool(container.attrs["State"].get("OOMKilled"))
+        if oom or exit_code != 137 or timed_out:
+            return oom
+        for _ in range(OOM_RECHECKS):
+            time.sleep(OOM_RECHECK_INTERVAL_S)
+            container.reload()
+            if container.attrs["State"].get("OOMKilled"):
+                return True
+        return False
 
     @staticmethod
     def _capture(container: Container, limit: int, stdout: bool) -> tuple[str, bool]:
